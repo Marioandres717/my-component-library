@@ -1,13 +1,5 @@
 import styled from "styled-components";
-
-const primary100 = "#9D95ED";
-const primary200 = "#6256E8";
-const primary300 = "#383180";
-
-const neutral100 = "#ffffff";
-const neutral200 = "";
-const neutral300 = "";
-const neutral600 = "#000000";
+import { purple, neutral } from "../utils/colors";
 
 const Button = styled.button`
   padding: 12px 25px;
@@ -19,21 +11,21 @@ const Button = styled.button`
 `;
 
 const PrimaryButton = styled(Button)`
-  background-color: ${primary300};
+  background-color: ${purple[300]};
   border: none;
-  color: ${neutral100};
+  color: ${neutral[100]};
 `;
 
 const SecondaryButton = styled(Button)`
-  background-color: ${neutral100};
-  border-color: ${primary300};
-  color: ${primary300};
+  background-color: ${neutral[100]};
+  border-color: ${purple[300]};
+  color: ${purple[300]};
 `;
 
 const TertiaryButton = styled(Button)`
-  background-color: ${neutral100};
+  background-color: ${neutral[100]};
   border: none;
-  color: ${primary300};
+  color: ${purple[300]};
 `;
 
 export { PrimaryButton, SecondaryButton, TertiaryButton };
