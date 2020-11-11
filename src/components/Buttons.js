@@ -1,31 +1,29 @@
 import styled from "styled-components";
-import { purple, neutral } from "../utils/colors";
+import { typeScale, defaultTheme } from "../utils";
 
 const Button = styled.button`
   padding: 12px 25px;
-  font-size: 1rem;
+  font-size: ${typeScale.paragraph};
   border-radius: 5px;
   min-width: 100px;
   cursor: pointer;
-  font-family: "SF MONO", "Roboto Mono", monospace;
+  font-family: ${defaultTheme.primaryFont};
 `;
 
 const PrimaryButton = styled(Button)`
-  background-color: ${purple[300]};
-  border: none;
-  color: ${neutral[100]};
+  background-color: ${defaultTheme.primaryColor};
+  color: ${defaultTheme.textColorOnPrimary};
+  border: 2px solid transparent;
 `;
 
 const SecondaryButton = styled(Button)`
-  background-color: ${neutral[100]};
-  border-color: ${purple[300]};
-  color: ${purple[300]};
+  border-color: ${defaultTheme.primaryColor};
+  color: ${defaultTheme.primaryColor};
 `;
 
 const TertiaryButton = styled(Button)`
-  background-color: ${neutral[100]};
-  border: none;
-  color: ${purple[300]};
+  border: 2px solid transparent;
+  color: ${defaultTheme.primaryColor};
 `;
 
 export { PrimaryButton, SecondaryButton, TertiaryButton };
