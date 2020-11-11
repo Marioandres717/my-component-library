@@ -1,4 +1,4 @@
-const primaryFont = '"SF MONO", Roboto Mono", monospace';
+const primaryFont = '"SF MONO", "Roboto Mono", monospace';
 
 const typeScale = {
   header1: "1.8rem",

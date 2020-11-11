@@ -11,4 +11,4 @@ const defaultTheme = {
   primaryFont,
 };
 
-export default defaultTheme;
+export { defaultTheme };
