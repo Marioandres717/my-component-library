@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import { ThemeProvider } from "styled-components";
-import {
-  PrimaryButton,
-  SecondaryButton,
-  TertiaryButton,
-} from "./components/Buttons";
+import { SignUpModal } from "./components";
 import { GlobalStyle, darkTheme, defaultTheme } from "./utils";
 
 const App = () => {
@@ -37,9 +33,7 @@ const App = () => {
           justifyContent: "space-around",
         }}
       >
-        <PrimaryButton>HEllo World</PrimaryButton>
-        <SecondaryButton>Hola Mundo</SecondaryButton>
-        <TertiaryButton>RAIL LA MUSIQUE</TertiaryButton>
+        <SignUpModal />
       </div>
       <GlobalStyle />
     </ThemeProvider>
